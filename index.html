@@ -4,7 +4,7 @@
   <head>
     <!-- meta data -->
     <meta charset="utf-8" />
-    <meta name="description" content="Volume and suface area of a cone" />
+    <meta name="description" content="Volume and suface area of a torus" />
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="Madeleine Forgeron" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-deep_orange.min.css" />
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Volume and suface area of a cone</title>
+    <title>Volume and suface area of a torus</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -28,7 +28,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Volume and suface area of a cone</span>
+          <span class="mdl-layout-title">Volume and suface area of a torus</span>
         </div>
       </header>
       <main class="mdl-layout__content">
@@ -55,15 +55,15 @@
             <!-- word part -->
             <th>
               <h2>Formula</h2>
-              <h3>V=(πr²)h/3 </h3>
+              <h3>V=(πr²)(2πR) </h3>
             </th>
           </tr>
         </table>
-         <h4>To calculate how much water you could fill into a cone enter the radius and the height of the cone below:</h4>
+         <h4>To calculate how much water you could fill into a torus enter the radius and the height of the torus below:</h4>
 
         <!-- Numeric Textfield with Floating Label -->
         <form action="#">
-          <p>Enter the radius (cm):</p>
+          <p>Enter the major radius (cm):</p>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input
               class="mdl-textfield__input"
@@ -71,14 +71,14 @@
               pattern="-?[0-9]*(\.[0-9]+)?"
               id="fahrenheit-to-celsius"
             />
-            <label class="mdl-textfield__label" for="fahrenheit-to-celsius">Radius ...</label>
+            <label class="mdl-textfield__label" for="fahrenheit-to-celsius">MRadius ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
 
         <!-- Numeric Textfield with Floating Label -->
         <form action="#">
-          <p>Enter the height (cm):</p>
+          <p>Enter the minor radius (cm):</p>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input
               class="mdl-textfield__input"
@@ -86,7 +86,7 @@
               pattern="-?[0-9]*(\.[0-9]+)?"
               id="height-of-pyramid"
             />
-            <label class="mdl-textfield__label" for="height-of-pyramid">Height ...</label>
+            <label class="mdl-textfield__label" for="height-of-pyramid">mRadius ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>

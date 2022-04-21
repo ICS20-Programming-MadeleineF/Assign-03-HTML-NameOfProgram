@@ -6,16 +6,16 @@
 
 'use strict'
 /**
- * This function calculates volume of a cone.
+ * This function calculates volume of a torus.
  */
 function calculate() {
   // input
-  let radius = parseFloat(document.getElementById('radius-of-cone').value) 
-  let height = parseFloat(document.getElementById('height-of-cone').value)
+  let Mradius = parseFloat(document.getElementById('Mradius-of-torus').value) 
+  let mradius = parseFloat(document.getElementById('mradius-of-torus').value)
   
   // process
   let volume = (1/6) * sideA * height
   
   // output
-  document.getElementById('volume').innerHTML = 'The volume of the cone is: ' + volume.toFixed(2) + ' ml³'
+  document.getElementById('volume').innerHTML = 'The volume of the torus is: ' + volume.toFixed(2) + ' ml³'
 }
