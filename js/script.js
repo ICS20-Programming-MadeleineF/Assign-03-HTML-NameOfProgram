@@ -6,16 +6,17 @@
 
 'use strict'
 /**
- * This function calculates volume of a torus.
+ * This function calculates volume of a ellipsoid.
  */
 function calculate() {
   // input
-  let Mradius = parseFloat(document.getElementById('Mradius-of-torus').value) 
-  let mradius = parseFloat(document.getElementById('mradius-of-torus').value)
+  let axisA = parseFloat(document.getElementById('axis-a-of-ellipsoid').value) 
+  let axisB = parseFloat(document.getElementById('axis-b-of-ellipsoid').value)
+  let axisC = parseFloat(document.getElementById('axis-c-of-ellipsoid').value)
   
   // process
-  let volume = (1/6) * sideA * height
+  let volume = (4/3) * (Math.PI) * axisA * axisB * axisC
   
   // output
-  document.getElementById('volume').innerHTML = 'The volume of the torus is: ' + volume.toFixed(2) + ' ml³'
+  document.getElementById('volume').innerHTML = 'The volume of the ellipsoid is: ' + volume.toFixed(2) + ' cm³'
 }

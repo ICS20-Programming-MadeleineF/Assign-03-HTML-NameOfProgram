@@ -32,6 +32,7 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+        
 <!-- Left aligned menu below button -->
 <button id="demo-menu-lower-left"
         class="mdl-button mdl-js-button mdl-button--icon">
@@ -40,7 +41,7 @@
 
 <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
     for="demo-menu-lower-left">
-  <li class="mdl-menu__item"><a href="./index2.html">Second Page</a></li>
+  <li class="mdl-menu__item"><a href="./index.html">First Page</a></li>
   <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="https://keisan.casio.com/exec/system/1223392149">Volume & Surface area checker</a></li>
   <li disabled class="mdl-menu__item">Edit</li>
 
@@ -50,7 +51,7 @@
         <table>
           <tr>
             <th>
-              <img src="./images/ellipsoid_volume.webp" alt="ellipsoid_volume" width="75%" height="auto"/>
+              <img src="./images/sa-of-ellipsoid.png" alt="sa-of-ellipsoid" width="75%" height="auto"/>
             </th>
             <!-- word part -->
             <th>
@@ -115,34 +116,7 @@
           onclick="calculate()">
           Calculate
         </button> 
-        <!-- snack bar that chages colour -->
-<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">This button changes colour when clicked</button>
-<div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
-  <div class="mdl-snackbar__text"></div>
-  <button class="mdl-snackbar__action" type="button"></button>
-</div>
-<script>
-(function() {
-  'use strict';
-  var snackbarContainer = document.querySelector('#demo-snackbar-example');
-  var showSnackbarButton = document.querySelector('#demo-show-snackbar');
-  var handler = function(event) {
-    showSnackbarButton.style.backgroundColor = '';
-  };
-  showSnackbarButton.addEventListener('click', function() {
-    'use strict';
-    showSnackbarButton.style.backgroundColor = '#' +
-        Math.floor(Math.random() * 0xFFFFFF).toString(16);
-    var data = {
-      message: 'POP',
-      timeout: 2000,
-      actionHandler: handler,
-      actionText: 'Undo'
-    };
-    snackbarContainer.MaterialSnackbar.showSnackbar(data);
-  });
-}());
-</script>
+
           <div id="answers">
             <div id="volume"></div>
           </div>
