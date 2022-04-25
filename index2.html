@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-deep_orange.min.css" />
     <!-- css link -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
     <title>Volume and suface area of a ellipsoid</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!-- JS link -->
-    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
     <!--header -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
@@ -47,6 +47,10 @@
 
 </ul>
 
+<!-- MDL Spinner Component -->
+<div class="mdl-spinner mdl-js-spinner is-active"></div>
+
+        
         <!-- image -->
         <table>
           <tr>
@@ -56,11 +60,11 @@
             <!-- word part -->
             <th>
               <h2>Formula</h2>
-              <h3>V= (4/3) x π x a x b x c </h3>
+              <h3>V = 4 * π * (((ab) ** 1.6 + (ac) ** 1.6 + (bc) ** 1.6) / 3) ** 1/1.6 </h3>
             </th>
           </tr>
         </table>
-         <h4>To calculate how much water you could fill into a ellipsoid enter axis a, b, and c of the ellipsoid below:</h4>
+         <h4>To calculate how much paper could you wrap around a ellipsoid. Enter axis a, b, and c of the ellipsoid below:</h4>
 
         <!-- Numeric Textfield with Floating Label -->
         <form action="#">
@@ -109,7 +113,11 @@
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-        
+<!-- Deletable Chip -->
+<span class="mdl-chip mdl-chip--deletable">
+    <span class="mdl-chip__text">Deletable Chip(it's not really deletable)</span>
+    <button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+</span>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
@@ -118,7 +126,7 @@
         </button> 
 
           <div id="answers">
-            <div id="volume"></div>
+            <div id="SA"></div>
           </div>
         </p>
       </main>

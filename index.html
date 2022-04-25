@@ -45,7 +45,14 @@
   <li disabled class="mdl-menu__item">Edit</li>
 
 </ul>
-
+<!-- MDL Progress Bar with Buffering -->
+<div id="p3" class="mdl-progress mdl-js-progress"></div>
+<script>
+  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(33);
+    this.MaterialProgress.setBuffer(87);
+  });
+</script>
         <!-- image -->
         <table>
           <tr>
@@ -59,7 +66,8 @@
             </th>
           </tr>
         </table>
-         <h4>To calculate how much water you could fill into a ellipsoid enter axis a, b, and c of the ellipsoid below:</h4>
+         <h4>To calculate how much water you could fill into a ellipsoid.
+           Enter axis a, b, and c of the ellipsoid below:</h4>
 
         <!-- Numeric Textfield with Floating Label -->
         <form action="#">
