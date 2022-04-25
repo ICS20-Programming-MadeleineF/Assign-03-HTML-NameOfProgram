@@ -9,14 +9,14 @@
  * This function calculates volume of a ellipsoid.
  */
 function calculate() {
-  // input
+  // insert axis'
   let axisA = parseFloat(document.getElementById('axis-a-of-ellipsoid').value) 
   let axisB = parseFloat(document.getElementById('axis-b-of-ellipsoid').value)
   let axisC = parseFloat(document.getElementById('axis-c-of-ellipsoid').value)
   
-  // process
+  // calculates volume with formula
   let volume = (4/3) * (Math.PI) * axisA * axisB * axisC
   
-  // output
+  // displays volume
   document.getElementById('volume').innerHTML = 'The volume of the ellipsoid is: ' + volume.toFixed(2) + ' cm³'
 }
