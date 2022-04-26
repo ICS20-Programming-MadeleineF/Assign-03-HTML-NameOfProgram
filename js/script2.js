@@ -18,5 +18,5 @@ function calculate() {
   let SA = (4 * (Math.PI) * (((axisA * axisB) ** 1.6 + (axisA * axisC) ** 1.6 + (axisB * axisC) ** 1.6) / 3) ** 0.625)
   
   // display
-  document.getElementById('SA').innerHTML = 'The volume of the ellipsoid is: ' + SA.toFixed(2) + ' cm²'
+  document.getElementById('SA').innerHTML = 'The surface area of the ellipsoid is: ' + SA.toFixed(2) + ' cm²'
 }
